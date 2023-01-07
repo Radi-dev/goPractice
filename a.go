@@ -14,12 +14,30 @@ func getName ()string{
 	name1="89"
 	return name1
 }
+
+
+func arrayThings()[]string{
+	var a []string
+	// a[0]="sisi"
+	a=append(a,"mormon",)
+	a=append(a,"pp",)
+return a
+}
+
 func main() {
-	var name2 string
-	fmt.Scan(&name2)
-    fmt.Printf("Hello, R%vAdi%T!\n",name1,name1)
-    fmt.Println("Hello, Radi!",name2)
-    fmt.Println("Hello, World! "+name1,getName(),name1)
+	var count uint=0
+	for {
+count++
+fmt.Println(count)
+if count%2!=0 {
+	continue
+}
+		fmt.Printf("Hello, %v %T!\n",arrayThings(),name1)
+		if count>=20 {
+			break
+		}
+	}
+
 
 	// fmt.Println(quote.Go())
 }
