@@ -1,6 +1,7 @@
 package main
 
 import (
+	buddy "GoPractice/codewars"
 	fendi "GoPractice/fen"
 	"fmt"
 )
@@ -21,29 +22,23 @@ var a []string
 
 func arrayThings(thing string) []string {
 	// a[0]="sisi"
-	a = append(a, "mormon", thing)
-	a = append(a, "pp", thing)
+	// a = append(a, "mormon", thing)
+	a = append(a, thing)
 	return a
 }
 
 func main() {
-	var count uint = 0
 
-	for index, v := range arrayThings("hent") {
-		fmt.Println(index, v)
-	}
+
+	var txt1 string
 	for {
-		count++
-		fmt.Println(count)
-		if count%2 != 0 {
-			fendi.Si()
-			continue
-		}
-		fmt.Printf("Hello, %v %T!\n", arrayThings("ooi"), name1)
-		if count >= 20 {
-			break
-		}
-	}
+		fmt.Println("Current txt is",txt1,"\nEnter another")
+		fmt.Scan(&txt1)
 
-	// fmt.Println(quote.Go())
+	fendi.Si()
+	fmt.Println(buddy.SumDivisors(75))
+	fmt.Println(buddy.Buddy(1071625,1103735))
+		fmt.Printf("Hello, %v!\n\n=============\n\n", arrayThings(txt1), )
+
+	}
 }
