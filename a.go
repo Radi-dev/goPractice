@@ -26,19 +26,23 @@ func arrayThings(thing string) []string {
 	a = append(a, thing)
 	return a
 }
-
 func main() {
+	fmt.Printf("hiii")
 
-
+	count := 0
 	var txt1 string
 	for {
-		fmt.Println("Current txt is",txt1,"\nEnter another")
+
+		fmt.Println("Current txt is", txt1, "\nEnter another")
 		fmt.Scan(&txt1)
 
-	fendi.Si()
-	fmt.Println(buddy.SumDivisors(75))
-	fmt.Println(buddy.Buddy(1071625,1103735))
-		fmt.Printf("Hello, %v!\n\n=============\n\n", arrayThings(txt1), )
-
+		fendi.Si()
+		fmt.Println(buddy.SumDivisors(75))
+		// fmt.Println(buddy.Buddy(1071625,1103735))
+		fmt.Printf("Hello, %v!\n\n=============\n\n", arrayThings(txt1))
+		count++
+		if count >= 2 {
+			break
+		}
 	}
 }
