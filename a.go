@@ -3,6 +3,7 @@ package main
 import (
 	buddy "GoPractice/codewars"
 	fendi "GoPractice/fen"
+	ha "GoPractice/hh"
 	"fmt"
 )
 
@@ -14,7 +15,7 @@ var name1 = "Mearnsk"
 
 func getName() string {
 	name1 := "Mein nama ist Ra "
-	name1 = "89"
+	name1 = "89ifenti"
 	return name1
 }
 
@@ -27,8 +28,8 @@ func arrayThings(thing string) []string {
 	return a
 }
 func main() {
-	fmt.Printf("hiii")
-
+	fmt.Println("hiii")
+	ha.CallMan()
 	count := 0
 	var txt1 string
 	for {
@@ -36,7 +37,7 @@ func main() {
 		fmt.Println("Current txt is", txt1, "\nEnter another")
 		fmt.Scan(&txt1)
 
-		fendi.Si()
+		fendi.Si(getName())
 		fmt.Println(buddy.SumDivisors(75))
 		// fmt.Println(buddy.Buddy(1071625,1103735))
 		fmt.Printf("Hello, %v!\n\n=============\n\n", arrayThings(txt1))

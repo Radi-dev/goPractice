@@ -2,7 +2,7 @@ package fendi
 
 import "fmt"
 
-func Si() {
+func Si(panam string) {
 	namesArr := []string{"pploo", "oggieoo", "sogoo", "tresoo", "wasdoo", "arrgoo"}
 	namesArr2 := []string{"ppl", "oggie", "sog", "tres", "wasd", "arrg"}
 	// ll:="iggii"
@@ -11,5 +11,5 @@ func Si() {
 	namesArr2 = append(namesArr2, "ff", "iii")
 	namesArr2 = append(namesArr2, namesArr...)
 
-	fmt.Printf("\n\nfendi %v \n\n", namesArr2)
+	fmt.Printf("\n\nfendi %v %v \n\n", namesArr2, panam)
 }
