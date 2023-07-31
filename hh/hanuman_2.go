@@ -1,3 +1,9 @@
 package ha
 
-var man = "A hooman with the capability of breathing"
+// Practice maps in this package
+
+type human struct {
+	description string
+	gender      string
+	height      int
+}

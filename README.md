@@ -10,5 +10,8 @@
 - Functions
 - Packages
 - Variable scope
+- Maps
+- Structs
+- Goroutines
 
 End

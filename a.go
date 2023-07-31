@@ -38,8 +38,8 @@ func main() {
 		fmt.Scan(&txt1)
 
 		fendi.Si(getName())
-		fmt.Println(buddy.SumDivisors(75))
-		// fmt.Println(buddy.Buddy(1071625,1103735))
+		go fmt.Println(buddy.SumDivisors(75))
+		go fmt.Println(buddy.Buddy(1071625, 1103735))
 		fmt.Printf("Hello, %v!\n\n=============\n\n", arrayThings(txt1))
 		count++
 		if count >= 2 {
